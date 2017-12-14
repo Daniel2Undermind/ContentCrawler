@@ -29,11 +29,11 @@ request(courseraHome+courseraCategories, function(error, response, htmlBody){
 //     }
 // })
 
-// var destination = fs.createWriteStream('./downloads/coursera.txt');
-// request(courseraHome+courseraCategories)
-// .pipe(destination)
-// .on('finish',function(){console.log('done');})
-// .on('error',function(err){console.log(err);});
+var destination = fs.createWriteStream('./downloads/coursera.txt');
+request(courseraHome+courseraCategories)
+.pipe(destination)
+.on('finish',function(){console.log('done');})
+.on('error',function(err){console.log(err);});
 
 app.listen(port);
 console.log('server is listening on ' + port);
