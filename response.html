@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+                    
+    <meta name="apple-itunes-app" content="app-id=1195088081"/>
+    <meta name="google-play-app" content="app-id=fr.mymooc.mymooc">
+
+            <link href="/bundles/frontend/css/select2.min.css" rel="stylesheet">
+
+                                        <link rel="next" href="/en/moocs/2">
+                                <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+            <link href="/bundles/frontend/css/popup.css" rel="stylesheet">
+            <link href="/bundles/frontend/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="/bundles/frontend/css/font-awesome.min.css" rel="stylesheet" >
+            <link href="/css/base.css" rel="stylesheet">
+            <link href="/css/responsive.css" rel="stylesheet">
+            <link href="/css/jquery-ui.min.css" rel="stylesheet">
+        
+    <link href="/bundles/frontend/css/jquery.smartbanner.css" rel="stylesheet">
+    <link href="/bundles/frontend/css/style.css" rel="stylesheet">
+    <link href="/bundles/frontend/css/responsive.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/zozo.tabs.min.css" rel="stylesheet">
+    <link href="/bundles/frontend/js/fullcalendar-3.0.1/fullcalendar.min.css" rel="stylesheet">
+    <link href="/bundles/frontend/js/fullcalendar-3.0.1/fullcalendar.print.css" rel="stylesheet" media="print">
+
+
+                    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+            <script src="/bundles/frontend/js/jquery-1.11.3.min.js"></script>
+            <script src="/bundles/frontend/js/jquery-ui.min.js"></script>
+            <script type="text/javascript">
+                var modalLoader = [];
+            </script>
+
+                    <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-50810299-1', 'auto');
+                ga('send', 'pageview');
+
+            </script>
+        
+        
+                    <link rel="canonical" href="https://www.my-mooc.com/en/moocs"/>
+
+            <link rel="alternate" href="https://www.my-mooc.com/en/moocs" hreflang="en"/>
+<link rel="alternate" href="https://www.my-mooc.com/zh/moocs" hreflang="zh"/>
+<link rel="alternate" href="https://www.my-mooc.com/fr/moocs" hreflang="fr"/>
+
+            <meta name="keywords" content="mooc" />
+<meta name="title" content="Courses" />
+<meta property="og:site_name" content="My Mooc" />
+<meta property="og:type" content="article" />
+
+            <title>Courses</title>
+        
+        <link rel="shortcut icon" href="/favicon.png" />        <link rel="apple-touch-icon" sizes="192x192" href="/icon.png">    </head>
+
+<body>
+
+
+         <nav class="navbar navbar-default navbar-transparent navbar-fixed-top hidden-xs" id="navbar-main">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false">
+                <span class="sr-only">Show menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a title="My Mooc" class="navbar-brand" href="/en">
+                <img src="/bundles/frontend/img/logo-white.svg" alt="My Mooc" width="100" height="45" data-no-retina class="logo-white">
+                <img src="/bundles/frontend/img/logo-blue.svg" alt="My Mooc" width="100" height="45" data-no-retina class="logo-blue">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navigation">
+                            <ul class="nav navbar-nav navbar-right switcher">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <div class="locale en"></div>
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+                            <li>
+                    <a href="/zh/moocs?filter%5Blocale%5D=en&amp;filter%5Bsearch%5D=" title="中文">
+                        <div class="locale zh"></div>
+                    </a>
+                </li>
+                            <li>
+                    <a href="/fr/moocs?filter%5Blocale%5D=en&amp;filter%5Bsearch%5D=" title="français">
+                        <div class="locale fr"></div>
+                    </a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                                        <ul class="nav navbar-nav navbar-right button-account">
+                    <li>
+                        <a data-target="#modalSearch" data-toggle="modal" href="#"><i class="fa fa-search"></i></a>
+                    </li>
+                                            <li>
+                            <a href="#" data-toggle="modal" data-target="#modalConnexion">
+                                <span class="submenu">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </a>
+                        </li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right">
+                    <li class="active first">            <a href="/en/moocs" title="Courses">
+        Courses
+    </a>
+            
+    </li>
+
+        <li>            <a href="/en/conceptors" title="Providers">
+        Providers
+    </a>
+            
+    </li>
+
+        <li>            <a href="/en/leaderboard" title="Leaderboard">
+        Leaderboard
+    </a>
+            
+    </li>
+
+        <li class="last">            <a href="http://blog.my-mooc.fr/" title="Blog">
+        Blog
+    </a>
+            
+    </li>
+
+
+        </ul>
+    
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-mymooc navbar-mobile hidden-sm hidden-md hidden-lg"
+     id="navbar-mobile">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div>
+                <button id="ChangeToggle" type="button" class="navbar-toggle close-style collapsed" data-toggle="collapse"
+                        data-target="#main-mobile" aria-expanded="false">
+                    <div id="sandwich-menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <a title="My Mooc" class="navbar-brand" href="/en">
+                    <img src="/bundles/frontend/img/logo-blue.svg" alt="My Mooc" width="100" height="45" data-no-retina>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse" id="main-mobile">
+            <form action="/en/moocs" method="GET" id="mooc-form">
+                <div>
+                    <i class="fa fa-search"></i>
+                    <input type="text" name="filter[search]" placeholder="Search" class="form-control">
+                    <input type="hidden" name="filter[from]" value="searchBar">
+                </div>
+                <ul class="switcher">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <div class="locale en"></div>
+        </a>
+        <ul class="dropdown-menu">
+                            <li>
+                    <a href="/zh/moocs?filter%5Blocale%5D=en&amp;filter%5Bsearch%5D=" title="中文">
+                        <div class="locale zh"></div>
+                    </a>
+                </li>
+                            <li>
+                    <a href="/fr/moocs?filter%5Blocale%5D=en&amp;filter%5Bsearch%5D=" title="français">
+                        <div class="locale fr"></div>
+                    </a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+            </form>
+
+            <ul class="mobile-ul">
+                                <li class="nav-img">
+                    <img src="/bundles/frontend/img/menu/cours.svg" alt="Book" class="item-image" />
+                    <a href="/en/moocs">
+                        Courses                    </a>
+                </li>
+                <li class="nav-img">
+                    <img src="/bundles/frontend/img/menu/etablissements.svg" alt="Book" class="item-image" />
+                    <a href="/en/conceptors">
+                        Providers                    </a>
+                </li>
+                <li class="nav-img">
+                    <img src="/bundles/frontend/img/menu/leaderboard.svg" alt="Book" class="item-image" />
+                    <a href="/en/leaderboard">
+                        Leaderboard                    </a>
+                </li>
+                <li class="nav-img">
+                    <img src="/bundles/frontend/img/menu/blog.svg" alt="Book" class="item-image" />
+                    <a href="/">
+                        Blog                    </a>
+                </li>
+                                    <li class="nav-img">
+                        <img src="/bundles/frontend/img/menu/deconnexion.svg" alt="Book" class="item-image" />
+                        <a href="#" data-toggle="modal" data-target="#modalConnexion" class="login">
+                            Login                        </a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</nav> 
+                        
+                        <section id="search-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                                    <h1 class="with-desc">
+                        You don't know which course to attend?                    </h1>
+                    <div class="description">
+                        You don't know which course to attend?                    </div>
+                            </div>
+        </div>
+    </div>
+</section>
+                                                        
+                <div class="main-container clearfix">
+    <div class="search-sidebar filter-is-visible">
+    <div class="top">
+        <a href="#" class="close-filters">Close</a>
+    </div>
+    <form action=""  method="GET">
+                
+        <div class="cd-filter-block">
+                <span class="filter-item "><label for="filter_search">Search</label></span>
+        <div class="cd-filter-content "><input type="search" id="filter_search" name="filter[search]" placeholder="Enter your search" class="form-control" /></div>
+    </div>
+        <div class="cd-filter-block sep-filter clearfix">
+            <div class="line"></div>
+            <div class="name">Advanced search</div>
+        </div>
+        <div class="cd-filter-block">
+                <span class="filter-item closed"><label for="filter_status">Status</label></span>
+        <div class="cd-filter-content closed"><select id="filter_status" name="filter[status][]" style="width: 100%" class="form-control" multiple="multiple"><option value="0">All</option><option value="2">In progress</option><option value="1">Coming soon</option><option value="3">Finished</option></select></div>
+    </div>
+        <div class="cd-filter-block">
+                <span class="filter-item closed"><label for="filter_category">Category</label></span>
+        <div class="cd-filter-content closed"><select id="filter_category" name="filter[category][]" style="width: 100%" class="form-control" multiple="multiple"><option value="1">Education and Teaching</option><option value="2">Health and Medecin</option><option value="3">Computer science</option><option value="4">Mathematics</option><option value="5">Art and Design</option><option value="6">Business management</option><option value="7">Marketing</option><option value="8">Management and human resources</option><option value="9">Communication and journalism</option><option value="10">Accounting</option><option value="11">Economy and finance</option><option value="12">Philosophy and religion</option><option value="13">History</option><option value="14">Physics, Chemistry and biology</option><option value="15">English and foreign languages</option><option value="16">Law and political science</option><option value="17">Sports and hobbies</option><option value="18">Environment</option></select></div>
+    </div>
+        <div class="cd-filter-block">
+                <span class="filter-item closed"><label for="filter_conceptor">University</label></span>
+        <div class="cd-filter-content closed"><select id="filter_conceptor" name="filter[conceptor][]" style="width: 100%" class="form-control" multiple="multiple"><option value="259"> KU Leuven University </option><option value="283">23andMe</option><option value="494">Abilways</option><option value="219">ACCA</option><option value="509">Accenture</option><option value="378">AECIS</option><option value="777">AF3M - Association Française des Malades du Myélome Multiple</option><option value="443">AFPA</option><option value="393">Agence universitaire de la Francophonie (AUF)</option><option value="467">Agreenium</option><option value="284">Agrocampus Ouest (Rennes)</option><option value="285">AgroParisTech</option><option value="466">AgroSup Dijon</option><option value="286">Aix-Marseille Université</option><option value="521">Albert Académie</option><option value="394">Alliance française Paris Ile-de-France</option><option value="268">Amazon Appstore for Android</option><option value="271">Amazon Web Services</option><option value="595">American Museum of Natural History</option><option value="142">American Museum of Natural History</option><option value="513">Amnesty International</option><option value="765">ANDAR : Association National de Défense contre l&#039;Arthrite Rhumatoïde</option><option value="395">Animafac</option><option value="751">ANSSI (Agence nationale de la sécurité des systèmes d&#039;information)</option><option value="208">Arizona State University</option><option value="287">Arts et Métiers Paris Tech</option><option value="534">ASDER</option><option value="396">Assistance Publique - Hôpitaux de Paris</option><option value="397">Association Connexion francophone</option><option value="398">Association des Universités pour le développement de l’enseignement numérique en Economie et Gestion</option><option value="399">Association FORMATICSanté</option><option value="749">Association française des hémophiles</option><option value="400">Association Laurette Fugain</option><option value="281">AT&amp;T</option><option value="288">Audencia Nantes</option><option value="168">Australian National University</option><option value="282">Autodesk</option><option value="547">Avomarc</option><option value="553">Babson College</option><option value="767">Barreau de Paris</option><option value="401">BDO</option><option value="203">Berkeley</option><option value="40">Berklee</option><option value="252">Berklee College of Music</option><option value="402">BNP PARIBAS</option><option value="171">Boston University</option><option value="530">BPI France</option><option value="737">British Council</option><option value="67">Brown University</option><option value="582">Brown University</option><option value="755">Caisse d&#039;allocations familiales</option><option value="567">California Institute of the Arts</option><option value="69">California Institute of the Arts</option><option value="73">Caltech</option><option value="250">Caltech</option><option value="524">Campus26</option><option value="403">Captain Spoc</option><option value="600">Case Western Reserve University</option><option value="134">Case Western Reserve University</option><option value="491">Castorama</option><option value="227">Catalyst</option><option value="752">CAVILAM – Alliance française de Vichy</option><option value="289">Centrale Paris</option><option value="56">CentraleSupélec</option><option value="452">Centre national de la fonction publique territoriale</option><option value="762">Centre Pompidou</option><option value="290">Centre Virchow-Villermé</option><option value="212">Chalmers University of Technology </option><option value="463">Circularevolution</option><option value="273">Cloudera</option><option value="404">CNOUS</option><option value="261">Colgate University</option><option value="518">Colibris</option><option value="388">Collège communautaire du Nouveau-Brunswick</option><option value="389">Collège des Bernardins</option><option value="292">Collège des Hautes Etudes Lyon Sciences</option><option value="598">Columbia University</option><option value="110">Columbia University</option><option value="207">Columbia University</option><option value="489">Common Purpose</option><option value="19">Commonwealth Education Trust</option><option value="609">Commonwealth Education Trust</option><option value="460">Communauté Université Grenoble Alpes</option><option value="532">Conférence des Instituts des Techniques d&#039;Ingénieur de l&#039;Industrie (ITII)</option><option value="386">Conférence des présidents d’université</option><option value="249">Cooper Union</option><option value="108">Copenhagen Business School</option><option value="664">Copenhagen Business School</option><option value="550">Cornak</option><option value="198">Cornell University</option><option value="545">CR2PA</option><option value="739">Crédit Agricole</option><option value="220">Curtin University</option><option value="605">Curtis Institute of Music</option><option value="129">Curtis Institute of Music</option><option value="188">Dartmouth College</option><option value="211">Davidson College</option><option value="239">Davidson Next</option><option value="702">Deakin University</option><option value="175">Delft University of Technology</option><option value="405">Demain Nos Enfants</option><option value="761">Diocèse de Paris</option><option value="406">DraftQuest</option><option value="559">DRHAT</option><option value="590">Duke University</option><option value="80">Duke University</option><option value="293">e-Artsup</option><option value="294">Ecole Centrale de Lille</option><option value="295">Ecole Centrale Lyon</option><option value="296">Ecole de l’Air</option><option value="297">École des officiers de la gendarmerie nationale</option><option value="662">École des Ponts ParisTech</option><option value="480">École des Ponts ParisTech</option><option value="390">Ecole Nationale de l’Aviation Civile (ENAC)</option><option value="525">Ecole Nationale de Voile et des Sports Nautiques</option><option value="298">Ecole Nationale Supérieure de Statistique et Economie Appliquée d’Alger</option><option value="87">École normale supérieure</option><option value="668">École normale supérieure</option><option value="83">École Polytechnique</option><option value="103">École Polytechnique Fédérale de Lausanne</option><option value="771">École Pratique des Hautes Études (EPHE)</option><option value="540">Ecole Supérieure d’Ingénieurs Léonard de Vinci (ESILV)</option><option value="300">Ecole Supérieure de Génie Informatique (ESGI)</option><option value="301">EFC Formation</option><option value="465">Egalco</option><option value="302">EHESP</option><option value="101">Eindhoven University of Technology</option><option value="648">Eindhoven University of Technology</option><option value="18">EIT Digital </option><option value="701">EIT Digital </option><option value="303">EM LYON Business School</option><option value="407">EMA Techedulab</option><option value="68">EMLYON Business School</option><option value="663">emlyon business school</option><option value="620">Emory University</option><option value="112">Emory University</option><option value="774">En Marche</option><option value="304">EN3S (École Nationale Supérieure de Sécurité Sociale)</option><option value="305">ENS Cachan</option><option value="306">ENS Lyon</option><option value="383">ENSAE-ENSAI Formation Continue (Cepe)</option><option value="450">ENSTA Paristech</option><option value="307">EPITA</option><option value="308">EPSAA (Ecole Professionnelle Supérieure d’Arts graphiques et d’Architecture)</option><option value="58">Erasmus University Rotterdam</option><option value="651">Erasmus University Rotterdam</option><option value="517">Ergalis</option><option value="96">ESADE Business and Law School</option><option value="639">ESADE Business and Law School</option><option value="117">ESCP Europe</option><option value="88">ESSEC Business School</option><option value="174">ETH Zurich</option><option value="86">Exploratorium</option><option value="276">Facebook</option><option value="408">Fédération des Centres sociaux et Socioculturels de France</option><option value="310">FERRANDI</option><option value="158">First Finance</option><option value="747">Fondation entreprendre</option><option value="542">Fondation Maison des Sciences de l&#039;Homme</option><option value="409">Fonds Monétaire International</option><option value="410">Formation 3.0</option><option value="47">Fudan University</option><option value="695">Fudan University</option><option value="177">Fullbridge</option><option value="689">Fundação Instituto de Administração</option><option value="44">Fundação Lemann</option><option value="691">Fundação Lemann</option><option value="228">Galileo University</option><option value="264">GEMS Education</option><option value="184">Georgetown University</option><option value="279">Georgia Institute of Technology</option><option value="46">Georgia Institute of Technology</option><option value="579">Georgia Institute of Technology</option><option value="411">GMF</option><option value="379">Gobelins, l&#039;école de l&#039;image</option><option value="266">Google</option><option value="574">Google Cloud</option><option value="267">Gradle</option><option value="743">Grand Palais RMN</option><option value="759">GRDF</option><option value="311">Grenoble Ecole de management</option><option value="312">Grenoble INP</option><option value="448">Groupe Eurotunnel</option><option value="738">Groupe Penelope</option><option value="531">Groupe SFC</option><option value="441">Groupe SII</option><option value="275">Hack Reactor</option><option value="255">Hamilton College</option><option value="181">Harvard University</option><option value="232">Harvey Mudd College</option><option value="7">Hebrew University of Jerusalem</option><option value="678">Hebrew University of Jerusalem</option><option value="313">HEC Montréal</option><option value="63">HEC Paris</option><option value="482">Helloasso</option><option value="519">HETIC</option><option value="84">High Tech High Graduate School of Education</option><option value="625">High Tech High Graduate School of Education</option><option value="37">Higher School of Economics</option><option value="654">Higher School of Economics</option><option value="185">Hong Kong University of Science and Technology</option><option value="314">IAE Montpellier</option><option value="596">IBM</option><option value="412">IBM</option><option value="470">Icademie</option><option value="71">Icahn School of Medicine at Mount Sinai</option><option value="616">Icahn School of Medicine at Mount Sinai</option><option value="315">ICAN</option><option value="413">ICAN</option><option value="498">ICD International Business School</option><option value="548">Identité RH</option><option value="22">IE Business School</option><option value="641">IE Business School</option><option value="216">IEEE</option><option value="451">IESA multimédia</option><option value="77">IESE Business School</option><option value="642">IESE Business School</option><option value="459">IÉSEG School of Management</option><option value="504">ifoca</option><option value="316">IFP SCHOOL</option><option value="225">IITBombay</option><option value="472">IN&#039;TECH</option><option value="414">In’Tech INFO</option><option value="497">INA</option><option value="499">Inalco</option><option value="206">Indian Institute of Management, Bangalore</option><option value="140">Indian School of Business</option><option value="660">Indian School of Business</option><option value="506">Inmediats</option><option value="415">Inpes</option><option value="317">INRIA</option><option value="318">INRS</option><option value="319">INSA</option><option value="320">INSA Rouen</option><option value="321">INSEEC Business School</option><option value="137">Insper</option><option value="392">Institut catholique de Paris</option><option value="416">Institut de physique du globe de Paris</option><option value="417">Institut de Recherche du Bien-être de la Médecine et du Sport Santé (IRBMS)</option><option value="322">Institut Louis Bachelier</option><option value="38">Institut Mines-Télécom</option><option value="462">Institut Pasteur</option><option value="324">Institut polytechnique des sciences avancées (IPSA)</option><option value="454">Institut Supérieur de Gestion (ISG)</option><option value="690">Instituto Tecnológico de Aeronáutica</option><option value="215">Inter-American Development Bank</option><option value="325">ISAE SupAero</option><option value="496">ISIPCA</option><option value="326">ISTH</option><option value="779">Iterop Academy</option><option value="418">JOBMAKERS</option><option value="584">Johns Hopkins University</option><option value="113">Johns Hopkins University</option><option value="527">King&#039;s College London</option><option value="183">KIx: Karolinska Institutet</option><option value="607">Koç University</option><option value="102">Koç University</option><option value="636">Korea Advanced Institute of Science and Technology</option><option value="136">Korea Advanced Institute of Science and Technology</option><option value="537">KPMG</option><option value="226">KTH Royal Institute of Technology</option><option value="200">Kyoto University</option><option value="327">L&#039;ESSCA, école de management</option><option value="421">L&#039;Observatoire de Paris</option><option value="488">Word Bank</option><option value="456">La coopération agricole</option><option value="770">La Maison Passive</option><option value="291">Le Cnam</option><option value="529">Le Faucheur Avocats</option><option value="419">Le quotidien du médecin</option><option value="420">Learn Assembly</option><option value="745">Leroy Merlin</option><option value="484">Logipro Formation</option><option value="756">Loughborough University</option><option value="64">Ludwig-Maximilians-Universität München (LMU)</option><option value="675">Ludwig-Maximilians-Universität München (LMU)</option><option value="100">Lund University</option><option value="634">Lund University</option><option value="630">Macquarie University</option><option value="138">Macquarie University</option><option value="422">Madmagz</option><option value="468">Magic Makers</option><option value="449">Mairie 2000</option><option value="242">MandarinX</option><option value="57">Match Teacher Residency</option><option value="618">Match Teacher Residency</option><option value="179">McGill</option><option value="61">McMaster University</option><option value="687">McMaster University</option><option value="423">Melior &amp; Maximus</option><option value="260">MéxicoX</option><option value="14">Michigan State University</option><option value="592">Michigan State University</option><option value="173">Microsoft</option><option value="512">MINES ParisTech</option><option value="172">MIT</option><option value="746">MMA</option><option value="280">MongoDB</option><option value="245">MongoDB University</option><option value="328">Montpellier SupAgro</option><option value="66">Moscow Institute of Physics and Technology</option><option value="643">Moscow Institute of Physics and Technology</option><option value="329">Mt. San Jacinto College</option><option value="744">Louvre Museum</option><option value="78">Nanjing University</option><option value="699">Nanjing University</option><option value="20">Nanyang Technological University, Singapore</option><option value="657">Nanyang Technological University, Singapore</option><option value="106">National Geographic Society</option><option value="624">National Geographic Society</option><option value="70">National Research Nuclear University MEPhI</option><option value="656">National Research Nuclear University MEPhI</option><option value="3">National Research Tomsk State University</option><option value="644">National Research Tomsk State University</option><option value="588">National Taiwan University</option><option value="114">National Taiwan University</option><option value="131">National University of Singapore</option><option value="658">National University of Singapore</option><option value="573">New Teacher Center</option><option value="82">New Teacher Center</option><option value="330">Normandie Université</option><option value="74">Northwestern University</option><option value="586">Northwestern University</option><option value="39">Novosibirsk State University </option><option value="655">Novosibirsk State University </option><option value="269">Nutanix</option><option value="278">Nvidia</option><option value="236">NYIF</option><option value="501">Objectif 2030</option><option value="424">Observatoire de la Côte d&#039;Azur</option><option value="446">One, Two, Three... Rap!</option><option value="257">Open Education Consortium</option><option value="331">Open Universiteit Nederland</option><option value="425">Orange</option><option value="426">Organisation internationale de la Francophonie (OIF)</option><option value="541">Ornikar</option><option value="204">Osaka University</option><option value="332">Paris Sciences et Lettres</option><option value="133">Peking University</option><option value="697">Peking University</option><option value="193">Peking University</option><option value="523">PhDOOC</option><option value="427">Pole Emploi</option><option value="681">Politecnico di Milano</option><option value="333">Polytechnique Montréal</option><option value="123">Pontificia Universidad Católica de Chile</option><option value="686">Pontificia Universidad Católica de Chile</option><option value="507">European Data Portal</option><option value="615">Princeton University</option><option value="127">Princeton University</option><option value="243">Princeton University</option><option value="309">PSB Paris School of Business</option><option value="217">Purdue University</option><option value="505">Queensland University of Technology</option><option value="772">Région Occitanie</option><option value="604">Relay Graduate School of Education</option><option value="109">Relay Graduate School of Education</option><option value="428">Réseau CANOPÉ</option><option value="429">Réseau International Francophone d’Établissements de Formation de Formateurs (RIFFEF)</option><option value="430">Réunion des Musées Nationaux</option><option value="53">Rice University</option><option value="606">Rice University</option><option value="194">Rice University</option><option value="775">Royal Holloway, University of London</option><option value="431">Rue 89</option><option value="99">Rutgers the State University of New Jersey</option><option value="17">Saint Petersburg State University</option><option value="652">Saint Petersburg State University</option><option value="277">Salesforce</option><option value="270">San Jose State University</option><option value="27">Sapienza University of Rome</option><option value="683">Sapienza University of Rome</option><option value="235">SchoolYourself</option><option value="125">Sciences Po</option><option value="661">Sciences Po</option><option value="750">Sénat</option><option value="195">Seoul National University</option><option value="520">Shanghai International Studies University (SISU)</option><option value="97">Shanghai Jiao Tong University</option><option value="696">Shanghai Jiao Tong University</option><option value="432">SILLAGES.info</option><option value="471">simplon</option><option value="209">Smith College</option><option value="552">SNCF</option><option value="433">Sopra Steria</option><option value="201">Sorbonne</option><option value="382">Sorbonne Universités</option><option value="237">St. Margaret’s Episcopal School</option><option value="653">St. Petersburg State Polytechnic University</option><option value="25">Stanford University</option><option value="549">Sup&#039;Com</option><option value="335">Sup’Internet</option><option value="543">SynLab</option><option value="336">Tallinn University</option><option value="234">Teachers College</option><option value="15">Technical University of Denmark (DTU)</option><option value="666">Technical University of Denmark (DTU)</option><option value="54">Technion - Israel Institute of Technology</option><option value="680">Technion - Israel Institute of Technology</option><option value="231">Technische Universität München</option><option value="16">Technische Universität München (TUM)</option><option value="676">Technische Universität München (TUM)</option><option value="135">Tecnológico de Monterrey</option><option value="647">Tecnológico de Monterrey</option><option value="11">Tel Aviv University</option><option value="679">Tel Aviv University</option><option value="477">Tela Botanica</option><option value="337">Télécom SudParis</option><option value="384">TÉLUQ</option><option value="145">TÉLUQ</option><option value="240">TenarisUniversity </option><option value="241">Tennessee Board of Regents</option><option value="434">Texas Instruments</option><option value="62">The Chinese University of Hong Kong</option><option value="674">The Chinese University of Hong Kong</option><option value="248">The Disque Foundation</option><option value="601">The George Washington University</option><option value="202">The Georgia Institute of Technology</option><option value="197">The Hong Kong Polytechnic University</option><option value="91">The Hong Kong University of Science and Technology</option><option value="673">The Hong Kong University of Science and Technology</option><option value="199">The International Monetary Fund</option><option value="196">The Islamic Research and Training Institute</option><option value="167">The Linux Foundation</option><option value="577">The Museum of Modern Art</option><option value="126">The Museum of Modern Art</option><option value="35">The Ohio State University</option><option value="569">The Ohio State University</option><option value="503">The Open University</option><option value="583">The Pennsylvania State University</option><option value="122">The Pennsylvania State University</option><option value="180">The Pontificia Universidad Javeriana</option><option value="253">The RWTH Aachen University</option><option value="190">The Smithsonian Institution</option><option value="31">The State University of New York</option><option value="566">The State University of New York</option><option value="247">The University of California, San Diego</option><option value="34">The University of Chicago</option><option value="619">The University of Chicago</option><option value="10">The University of Edinburgh</option><option value="677">The University of Hong Kong</option><option value="41">The University of Melbourne</option><option value="633">The University of Melbourne</option><option value="222">The University of Michigan</option><option value="51">The University of North Carolina at Chapel Hill</option><option value="597">The University of North Carolina at Chapel Hill</option><option value="758">The University of Sheffield</option><option value="632">The University of Sydney</option><option value="246">The University of Texas Health Science Center at Houston (UTHealth) School of Public Health</option><option value="262">The University of Texas of the Permian Basin</option><option value="79">The University of Tokyo</option><option value="659">The University of Tokyo</option><option value="218">The University of Tokyo</option><option value="224">The Wharton School of the University of Pennsylvania</option><option value="55">The World Bank Group</option><option value="591">The World Bank Group</option><option value="221">The World Wide Web Consortium (W3C)</option><option value="554">Thunderbird School of Global Management</option><option value="214">Tokyo Institute of Technology</option><option value="556">Toulouse Business School</option><option value="487">Traces</option><option value="435">Transapi</option><option value="256">Trinity College</option><option value="483">Trinity College Dublin</option><option value="436">Trophées Solidaires</option><option value="192">Tsinghua University</option><option value="274">Twitter</option><option value="768">UEA (University of East Anglia)</option><option value="526">UNC Kenan-Flagler</option><option value="437">UNESCO</option><option value="438">Unisciel</option><option value="205">Universidad Autónoma de Madrid</option><option value="169">Universidad Carlos III de Madrid</option><option value="685">Universidad de Chile</option><option value="124">Universidad de los Andes</option><option value="700">Universidad de los Andes</option><option value="116">Universidad Nacional Autónoma de México</option><option value="646">Universidad Nacional Autónoma de México</option><option value="338">Universidade Aberta</option><option value="23">Universidade de São Paulo</option><option value="692">Universidade de São Paulo</option><option value="81">Universidade Estadual de Campinas</option><option value="688">Universidade Estadual de Campinas</option><option value="12">Università Bocconi</option><option value="682">Università Bocconi</option><option value="387">Università Cattolica de Milan</option><option value="90">Universitat Autònoma de Barcelona</option><option value="640">Universitat Autònoma de Barcelona</option><option value="635">Universitat de Barcelona</option><option value="339">Universitat Oberta de Catalunya</option><option value="340">Universitat Politècnica de València</option><option value="176">Universitat Politècnica de Valencia </option><option value="170">Université catholique de Louvain</option><option value="381">Université Claude-Bernard Lyon 1</option><option value="754">The University of Auckland</option><option value="342">Université d’Artois</option><option value="343">Université de Bordeaux</option><option value="344">Université de Bourgogne</option><option value="345">Université de Bretagne Occidentale</option><option value="495">Université de Caen</option><option value="346">Université de Cergy-Pontoise</option><option value="539">University of Durham</option><option value="445">Université de Franche-Comté</option><option value="75">University of Geneva</option><option value="455">Université de Jendouba</option><option value="558">Université de la Polynésie Française</option><option value="348">Université de Lausanne</option><option value="349">Université de Laval</option><option value="391">Université de Leyde</option><option value="544">Université de Liège</option><option value="350">Université de Lille</option><option value="351">Université de Limoges</option><option value="352">Université de Lorraine</option><option value="510">University of Mons</option><option value="353">Université de Montpellier</option><option value="354">Université de Montréal</option><option value="355">Université de Nantes</option><option value="356">Université de Nice Sophia Antipolis</option><option value="357">Université de Paris Ouest Nanterre La Défense</option><option value="358">Université de Perpignan</option><option value="478">Université de Rennes 1</option><option value="359">Université de Sousse</option><option value="360">Université de Strasbourg</option><option value="361">Université de Toulouse III</option><option value="362">Université de Toulouse Jean-Jaurès</option><option value="502">Université de Valenciennes et du Hainaut-Cambrésis</option><option value="741">The University of Waikato</option><option value="522">University of Warwick</option><option value="385">Université du Québec à Trois-Rivières</option><option value="479">Université Fédérale Toulouse Midi-Pyrénées</option><option value="363">Université Libre de Bruxelles</option><option value="364">Université Lyon III</option><option value="365">Université Michel de Montaigne – Bordeaux 3</option><option value="742">Monash University</option><option value="150">Université Numérique Européenne des Etudes Juives (UNEEJ)</option><option value="366">Université Numérique Francophone des Sciences de la Santé et du Sport</option><option value="367">Université Ouverte des Humanités</option><option value="368">Université Panthéon-Assas Paris II</option><option value="369">Université Paris 1 Panthéon-Sorbonne</option><option value="764">Université Paris 13</option><option value="447">Université Paris Descartes</option><option value="370">Université Paris Diderot</option><option value="371">Université Paris Sud</option><option value="476">Université Paris VIII Vincennes - Saint-Denis</option><option value="763">Université Paris-Dauphine</option><option value="380">Université Paris-Saclay</option><option value="372">Université Pierre et Marie CURIE</option><option value="373">Université Pierre-Mendès-France - Grenoble 2</option><option value="374">Université Sorbonne Nouvelle</option><option value="461">Université Sorbonne Paris Cité</option><option value="375">Université Virtuelle d&#039;AgroEcologie</option><option value="9">Universiteit Leiden</option><option value="645">Universiteit Leiden</option><option value="191">University of Adelaide</option><option value="120">University of Alberta</option><option value="693">University of Alberta</option><option value="130">University of Amsterdam</option><option value="650">University of Amsterdam</option><option value="565">University of Arizona</option><option value="52">University of Barcelona</option><option value="178">University of British Columbia</option><option value="622">University of California, Davis</option><option value="139">University of California, Davis</option><option value="613">University of California, Irvine</option><option value="121">University of California, Irvine</option><option value="48">University of California, San Diego</option><option value="5">University of California, San Francisco</option><option value="580">University of California, San Francisco</option><option value="6">University of California, Santa Cruz</option><option value="621">University of California, Santa Cruz</option><option value="92">University of Cape Town</option><option value="637">University of Cape Town</option><option value="265">University of Chicago</option><option value="576">University of Colorado Boulder</option><option value="72">University of Colorado Boulder</option><option value="614">University of Colorado System</option><option value="128">University of Colorado System</option><option value="94">University of Copenhagen</option><option value="665">University of Copenhagen</option><option value="593">University of Florida</option><option value="105">University of Florida</option><option value="587">University of Geneva</option><option value="516">University of Groningen</option><option value="187">University of Hong Kong</option><option value="603">University of Houston System</option><option value="115">University of Houston System</option><option value="65">University of Illinois at Urbana-Champaign</option><option value="560">University of Kentucky</option><option value="104">University of Kentucky</option><option value="570">University of Lausanne</option><option value="76">University of Lausanne</option><option value="528">University of Leeds</option><option value="376">University of Leicester</option><option value="111">University of London</option><option value="21">University of Manchester</option><option value="611">University of Manchester   </option><option value="59">University of Maryland, College Park</option><option value="581">University of Maryland, College Park</option><option value="562">University of Michigan</option><option value="89">University of Michigan</option><option value="98">University of Minnesota</option><option value="617">University of Minnesota</option><option value="377">University of Naples Federico II</option><option value="50">University of Nebraska</option><option value="627">University of Nebraska</option><option value="4">University of New Mexico</option><option value="578">University of New Mexico</option><option value="210">University of Notre Dame</option><option value="29">University of Pennsylvania</option><option value="575">University of Pennsylvania</option><option value="223">University of Pennsylvania</option><option value="623">University of Pittsburgh</option><option value="119">University of Pittsburgh</option><option value="189">University of Queensland</option><option value="760">University of Reading</option><option value="30">University of Rochester</option><option value="571">University of Rochester</option><option value="28">University of Science and Technology of China</option><option value="698">University of Science and Technology of China</option><option value="244">University of Tennessee</option><option value="233">University of Texas at Arlington</option><option value="213">University of Texas at Austin</option><option value="107">University of Toronto</option><option value="694">University of Toronto</option><option value="186">University of Toronto</option><option value="589">University of Virginia</option><option value="95">University of Virginia</option><option value="263">University of Washington</option><option value="568">University of Washington</option><option value="132">University of Washington</option><option value="45">University of Western Australia</option><option value="563">University of Western Australia</option><option value="42">University of Wisconsin–Madison</option><option value="13">University of Zurich</option><option value="564">University of Zurich</option><option value="561">University System of Georgia</option><option value="93">University System of Georgia</option><option value="85">UNSW Australia (The University of New South Wales)</option><option value="631">UNSW Australia (The University of New South Wales)</option><option value="649">Utrecht University</option><option value="490">UTT - Université de Technologie de Troyes</option><option value="439">UVED</option><option value="8">Vanderbilt University</option><option value="612">Vanderbilt University</option><option value="230">Wageningen University</option><option value="251">Waseda University</option><option value="469">WaterMelon</option><option value="254">Wellesley College</option><option value="60">Wesleyan University</option><option value="628">Wesleyan University</option><option value="24">West Virginia University</option><option value="626">West Virginia University</option><option value="238">Weston High School</option><option value="442">Wikimedia France</option><option value="2">Xi&#039;an Jiaotong University</option><option value="684">Xi&#039;an Jiaotong University</option><option value="49">Yale University</option><option value="599">Yale University</option><option value="26">Yeshiva University</option><option value="602">Yeshiva University</option><option value="638">Yonsei University</option><option value="440">Zendesk</option><option value="500">Zevillage</option><option value="272">Zipfian</option><option value="716">东北大学</option><option value="722">东南大学</option><option value="736">中南财经政法大学</option><option value="728">中国人民解放军理工大学</option><option value="706">中国农业大学</option><option value="707">中国地质大学（武汉）</option><option value="724">中山大学</option><option value="713">兰州大学</option><option value="721">北京协和医学院</option><option value="720">北京大学</option><option value="704">北京师范大学</option><option value="703">Beijing Institute of Technology</option><option value="729">北京科技大学</option><option value="705">北京航空航天大学</option><option value="708">华东师范大学</option><option value="718">南京航空航天大学</option><option value="715">南开大学</option><option value="725">台北医学大学</option><option value="734">台湾云林科技大学</option><option value="717">台湾新竹“清华大学”</option><option value="712">吉林大学</option><option value="726">同济大学</option><option value="710">哈尔滨工业大学</option><option value="719">国防科学技术大学</option><option value="714">微软亚洲研究院</option><option value="730">武汉大学</option><option value="731">武汉理工大学</option><option value="735">浙江大学</option><option value="711">湖南大学</option><option value="727">电子科技大学</option><option value="709">第四军医大学</option><option value="723">西南交通大学</option><option value="733">西安交通大学</option><option value="732">西安电子科技大学</option></select></div>
+    </div>
+        <div class="cd-filter-block">
+                <span class="filter-item closed"><label for="filter_plateform">Platform</label></span>
+        <div class="cd-filter-content closed"><select id="filter_plateform" name="filter[plateform][]" style="width: 100%" class="form-control" multiple="multiple"><option value="773">360 Learning</option><option value="757">Alison</option><option value="486">Apolearn</option><option value="551">Aquent Gymnasium</option><option value="533">Bâtiment Durable</option><option value="165">BeeBac</option><option value="166">Blackboard Open Education</option><option value="458">Canvas</option><option value="164">Canvas Network</option><option value="453">Claroline Connect</option><option value="147">Cognitum</option><option value="492">Coorpacademy</option><option value="1">Coursera</option><option value="769">Créacours</option><option value="766">Dr SPOC</option><option value="162">ECO : Elearning, Communication and Open-data projet</option><option value="508">Educanti</option><option value="161">EDUlib</option><option value="32">Edx</option><option value="160">EMMA</option><option value="149">Emploi Store</option><option value="159">First Business Mooc</option><option value="157">FUN</option><option value="43">Futurelearn</option><option value="555">icourse163</option><option value="156">IONISx</option><option value="536">Iversity</option><option value="535">L’Ecole de la Liberté</option><option value="557">Learning Tribes</option><option value="778">Mandarine Academy</option><option value="776">Matrix</option><option value="748">Mooc et Cie</option><option value="155">MOOCit</option><option value="473">Moodle</option><option value="154">Neodemia</option><option value="485">Open Agora</option><option value="146">Open SAP</option><option value="753">Open2Study</option><option value="153">OpenClassrooms</option><option value="143">Orange Solerni</option><option value="493">SINOD</option><option value="514">Skillshare</option><option value="148">SPOC en stock</option><option value="740">Stepik</option><option value="457">The MOOC Agency</option><option value="36">Udacity</option><option value="151">Udemy</option><option value="144">Ulibre</option><option value="444">Unow</option><option value="464">Windie</option><option value="481">Xuetangx</option></select></div>
+    </div>
+        <div class="cd-filter-block">
+                <span class="filter-item closed"><label>Language</label></span>
+        <div class="cd-filter-content closed">    <ul class="list"><li><input type="radio" id="filter_locale_placeholder" name="filter[locale]" class="" value="" /><label class="radio-label" for="filter_locale_placeholder">
+                                                All languages
+                                            </label></li><li><input type="radio" id="filter_locale_0" name="filter[locale]" class="" value="zh" /><label class="radio-label" for="filter_locale_0">
+                                                Chinese
+                                            </label></li><li><input type="radio" id="filter_locale_1" name="filter[locale]" class="" value="en" checked="checked" /><label class="radio-label" for="filter_locale_1">
+                                                English
+                                            </label></li><li><input type="radio" id="filter_locale_2" name="filter[locale]" class="" value="fr" /><label class="radio-label" for="filter_locale_2">
+                                                French
+                                            </label></li></ul></div>
+    </div>
+
+        <div class="cd-filter-block">
+                        <span class="filter-item closed"><label for="filter_price_max">Prix maximum</label></span>
+            <div class="cd-filter-content closed"><input type="range" id="filter_price_max" name="filter[price_max]" min="0" max="1400" class="form-control" /><div class="row row-price">
+                    <div class="col-xs-6">
+                        <div class="min-value-price text-left">De <span></span>€</div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="max-value-price text-right">à <span></span>€</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="filter_from" name="filter[from]" value="moocs" />
+        
+    </form>
+</div>
+
+
+    <div class="search-results filter-is-visible">
+        <div class="top clearfix">
+                                                                                                                                                                                                                                                                                                                                            <div class="nb-results text-right pull-right">
+    </div>
+</div>        <div class="container-fluid" id="">
+            <div class="categtop">
+                            </div>
+        </div>
+        <div class="container-fluid" id="search-results">
+        </div>
+    </div>
+    <div class="open-filters filter-is-visible">Filters</div>
+</div>
+        
+                <footer>
+        
+            <section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 about">
+                <img src="/bundles/frontend/img/logo-white.svg" alt="My Mooc" width="100" height="45" data-no-retina class="logo-white">
+                <div class="sep"></div>
+                <div class="description">
+                    Are you looking to train yourself online? Let us guide you by My Mooc, the first search engine for online courses including a wide community dimension.                    <div class="moocsearch">
+                        <form action="/en/moocs" method="GET">
+                            <input type="search" id="moocsearch" name="filter[search]" required="required" placeholder="Mathematics..." />
+                            <input type="hidden" name="filter[from]" value="footerSearch">
+                            <input type="submit" id="moocsubmit" name="" value="OK" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="title">Sitemap</div>
+                            <ul class="sitemap">
+                    <li class="first">            <a href="/en/about" title="About">
+        About
+    </a>
+            
+    </li>
+
+        <li>            <a href="http://blog.my-mooc.com" title="Blog">
+        Blog
+    </a>
+            
+    </li>
+
+        <li class="active">            <a href="/en/moocs" title="Courses">
+        Courses
+    </a>
+            
+    </li>
+
+        <li>            <a href="/en/conceptors" title="Providers">
+        Providers
+    </a>
+            
+    </li>
+
+        <li>            <a href="/en/leaderboard" title="Leaderboard">
+        Leaderboard
+    </a>
+            
+    </li>
+
+        <li class="last">            <a href="http://business.my-mooc.com" title="My Mooc for companies">
+        My Mooc for companies
+    </a>
+            
+    </li>
+
+
+        </ul>
+    
+            </div>
+            <div class="col-xs-12 col-sm-3" id="rss">
+                <div class="title">Latest news</div>
+                <div class="rss-content"></div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 networks">
+                <div class="title">Social networks</div>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/Mymooc/"
+                           title="My Mooc on Facebook">
+                            <div class="network facebook" ></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/My_Mooc"
+                           title="My Mooc on Twitter">
+                            <div class="network twitter"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href=" https://www.linkedin.com/company/9247198?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A9247198%2Cidx%3A2-1-2%2CtarId%3A1455563458664%2Ctas%3Amy"
+                           title="My Mooc on Linkedin">
+                            <div class="network linkedin"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href=" https://plus.google.com/u/0/+MymoocFr-lapprentissageenligne/posts"
+                           title="My Mooc on Google+">
+                            <div class="network google"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/my_mooc/"
+                           title="My Mooc on Instagram">
+                            <div class="network instagram"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI2OTM5NjI0Ng==&scene=124#wechat_redirect"
+                           title="My Mooc on WeChat">
+                            <div class="network wechat"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Fp%2F1006065982892049%2Fhome%3Ffrom%3Dpage_100606%26mod%3DTAB%26is_all%3D1&domain=.weibo.com&ua=php-sso_sdk_client-0.6.23&_rand=1487326776.6904#place"
+                           title="My Mooc on Social">
+                            <div class="network social"></div>
+                        </a>
+                    </li>
+                </ul>
+                <button class="contact" data-toggle="modal" data-target="#modalContactUs">
+                    contact us                </button>
+                <div class="sep"></div>
+                <div class="title">Newsletter&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="moocnews">
+    <form action="/en/moocs/newletter/" class="form-inline form-newsletter-home">
+        
+        
+        <input type="email" id="notification_email" name="notification[email]" required="required" placeholder="Your mail" class="form-control" />
+        <button type="submit"         id="notification_save" name="notification[save]" required="required" class="btn form-control hidden-xs"
+>
+        OK</button>
+        
+    </form>
+</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <span>Copyright © 2017 My Mooc. All rights reserved.</span>
+                    <span class="pipe hidden-xs"></span>
+                    <a href="https://www.my-mooc.com/en/legal_notice">
+                        <span>Legal notice</span>
+                    </a>
+                    <span class="pipe hidden-xs"></span>
+                    <a href="https://www.my-mooc.com/en/confidentiality">
+                        <span>Privacy policy</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                </footer>
+                
+        <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="Guide">
+    <div class="container" role="document">
+        <div class="row">
+            <div class="col-xs-hidden col-sm-hidden col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8">
+                <form action="/en/moocs" method="GET">
+                    <div class="form-group clearfix">
+                        <input type="text" name="filter[search]" placeholder="Mathematics..." class="form-control typeahead">
+                        <input type="hidden" name="filter[from]" value="searchBar">
+                        <input type="submit" value="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>        <div class="modal fade modal-info" tabindex="-1" role="dialog" id="modalInfo">
+    <div class="modal-dialog">
+        <div class="alert alert-TYPE_PLACEHOLDER alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <div class="inner row">
+                <div class="content col-xs-12 text-center">MESSAGE_PLACEHOLDER</div>
+                <div class="extra col-xs-12">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="global-btn-inverse center-block" type="button">
+                        Close window                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+<script type="text/javascript">
+    var guideCallback = function () {
+        $('#modalGuideSearch .list .item').on('click', function () {
+            /*var val = $(this).data("value");
+            var type = $('#modalGuideSearch .list').data('type');
+
+            $("#val-" + type).val(val);*/
+
+            /*$('#modalGuideSearch .list .item').each(function () {
+                $(this).removeClass('selected');
+            });
+            $(this).addClass('selected');*/
+            var url = $(this).data('link');
+            window.location.replace(url);
+            return false;
+        });
+    };
+
+    modalLoader.push({
+        url: 'https://www.my-mooc.com/en/moocs/guide/',
+        container: '#modalGuideSearch',
+        useOnSubmit: false,
+        callback: guideCallback
+    });
+</script>
+            <script src="/bundles/frontend/js/jquery.appear.js"></script>
+    <script src="/bundles/frontend/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/bundles/frontend/js/retina.js"></script>
+    <script src="/bundles/frontend/js/typeahead.bundle.js"></script>
+    <script src="/bundles/frontend/js/jquery.lazyload.min.js"></script>
+    <script src="/bundles/frontend/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="/bundles/frontend/js/ajax.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            /* Correction of bootstrap bug with modal and navbar (fixed-top) */
+            (function ($) {
+                var _originalSetScrollbar = $.fn.modal.Constructor.prototype.setScrollbar;
+                var _originalResetScrollbar = $.fn.modal.Constructor.prototype.resetScrollbar;
+
+                $.extend($.fn.modal.Constructor.prototype, {
+                    setScrollbar: function () {
+                        var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10);
+                        this.$body.find('.navbar-fixed-top').css({'padding-right': bodyPad + this.scrollbarWidth});
+                        return _originalSetScrollbar.call(this);
+                    },
+                    resetScrollbar: function () {
+                        this.$body.find('.navbar-fixed-top').css({'padding-right': 0});
+                        return _originalResetScrollbar.call(this);
+                    }
+                });
+            })(jQuery);
+
+            $(".navbar-toggle").click(function() {
+                if ($("#main-mobile").hasClass('in')) {
+                    return $("body").removeClass("no-scroll");
+                } else {
+                    return $("body").addClass("no-scroll");
+                }
+            });
+
+            $(".tab-close").hide();
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-type="ajax-button"]').on('click', ajaxButton);
+        });
+    </script>
+            
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            modalLoader.push({
+                url: 'https://www.my-mooc.com/en/contact/new/type/global/id/0/',
+                container: '#modalContactUs',
+                useOnSubmit: true
+            });
+
+            
+                    modalLoader.push({
+                        url: 'https://www.my-mooc.com/en/login?original=1',
+                        container: '#modalConnexion',
+                        useOnSubmit: true
+                    });
+
+                    modalLoader.push({
+                        url: 'https://www.my-mooc.com/en/register/',
+                        container: '#modalInscription',
+                        useOnSubmit: true
+                    });
+
+                    modalLoader.push({
+                        url: 'https://www.my-mooc.com/en/resetting/request',
+                        container: '#modalPassword',
+                        useOnSubmit: true
+                    });
+
+            
+            $.ajax({
+                url: '/en/rss/feed',
+                success: function (data) {
+                    $('#rss .rss-content').html(data);
+                    var owl = $('#slider-footer');
+                    owl.owlCarousel({
+                        margin: 0,
+                        loop: true,
+                        items: 1,
+                        nav: true,
+                        navText: [
+                            "<div class='arrow-prev hide'>",
+                            "<div class='arrow-next'>"
+                        ],
+                        slideBy: 1,
+                        dots: false,
+                        autoplay: true,
+                        autoplayTimeout: 4000,
+                        autoplayHoverPause: true
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            checkOpenModal();
+
+            // Lazy Loading
+            var lazy = $('img.lazy').lazyload();
+
+            loadModals();
+        });
+
+        // Typehead
+        var moocs = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            prefetch: "https://www.my-mooc.com/en/moocs/typeahead.json/"
+        });
+
+        $(".typeahead").typeahead(null, {
+            name: 'moocs',
+            source: moocs,
+            displayKey: 'title'
+        }).bind('typeahead:selected', function(obj, selected) {
+            window.location.href = selected.href;
+        });
+
+        $('img[src$=".svg"]:not(.no-svg)').each(function() {
+            convertImgToSvg($(this));
+        });
+
+        function convertImgToSvg($img) {
+            var imgID = $img.attr('id');
+            var imgClass = $img.attr('class');
+            var imgURL = $img.attr('src');
+
+            $.get(imgURL, function(data) {
+                var $svg = $(data).find('svg');
+
+                if(typeof imgID !== 'undefined') {
+                    $svg = $svg.attr('id', imgID);
+                }
+
+                if(typeof imgClass !== 'undefined') {
+                    $svg = $svg.attr('class', imgClass+' replaced-svg');
+                }
+
+                $svg = $svg.removeAttr('xmlns:a');
+
+                if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+                    $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+                }
+
+                $img.replaceWith($svg);
+
+            }, 'xml');
+        }
+
+
+    </script>
+
+
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/bundles/frontend/js/list.js"></script>
+    <script src="/js/zozo.tabs.min.js"></script>
+    <script src="/bundles/frontend/js/fullcalendar-3.0.1/lib/moment.min.js"></script>
+    <script src="/bundles/frontend/js/fullcalendar-3.0.1/fullcalendar.js"></script>
+    <script src="/bundles/frontend/js/fullcalendar-3.0.1/locale-all.js"></script>
+
+    <script src="/bundles/frontend/js/jquery.smartbanner.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $.smartbanner({
+                appStoreLanguage: 'en',
+                title: 'My Mooc Advisor',
+                price: 'Free',
+                inGooglePlay: 'In Google Play',
+                button: 'View',
+                layer: true
+            });
+        });
+
+        $(document).ready(function () {
+
+            var navbarclasses = ['navbar-transparent', 'navbar-white'];
+            var navbar = $('#navbar-main');
+            $(window).scroll(function () {
+                var value = ($(document).scrollTop() < 10);
+                if (navbar.hasClass(navbarclasses[+value])) {
+                    navbar.fadeOut(100, function () {
+                        $(this).removeClass(navbarclasses[+value]).addClass(navbarclasses[+!value]).fadeIn(100);
+                    });
+                }
+            });
+        });
+    </script>
+
+        
+
+            <script type="text/javascript">
+
+            function triggerFilter(bool) {
+                var elementsToTrigger = $([$('.search-sidebar'), $('.search-results'), $('.open-filters')]);
+                elementsToTrigger.each(function(){
+                    $(this).toggleClass('filter-is-visible', bool);
+                });
+            }
+
+            $(document).ready(function() {
+
+                $(".preview-mooc .cover").on("mouseenter", function () {
+                    $(".preview-mooc .cover").on("mouseleave", function () {
+                        $(this).find(".details").slideUp(500);
+                    });
+                });
+
+                $('.open-filters').on('click', function() {
+                    triggerFilter(true);
+                });
+
+                $('.close-filters').on('click', function() {
+                    triggerFilter(false);
+                });
+
+                if (((window.innerWidth > 0) ? window.innerWidth : screen.width) < 1170) {
+                    triggerFilter(false);
+                }
+
+                $('.cd-filter-block .filter-item').on('click', function() {
+                    $(this).toggleClass('closed').siblings('.cd-filter-content').slideToggle(300);
+                });
+
+                $('[name^="filter["]').on('input', function(e) {
+                    clearTimeout($.data(this, 'timer'));
+                    if (e.keyCode == 13) {
+                        loadAjaxContent();
+                    } else {
+                        $(this).data('timer', setTimeout(loadAjaxContent, 500));
+                    }
+                });
+
+                $('[name^="filter["]').on('change', function(e) {
+                    loadAjaxContent();
+                });
+
+                // Price
+                $(".min-value-price span").text($("input[name*='price_max']").prop('min'));
+                $(".max-value-price span").text($("input[name*='price_max']").prop('max'));
+
+                $("input[name*='price_max']").on("change", function() {
+                    var currentValue = $("input[name*='price_max']").prop('value');
+                    $(".max-value-price span").text(currentValue);
+                });
+
+            });
+        </script>
+    
+            <script src="/bundles/frontend/js/select2.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('select[name^="filter[status]"]').select2({placeholder: 'All status'});
+                $('select[name^="filter[category]"]').select2({placeholder: 'All categories'});
+                $('select[name^="filter[conceptor]"]').select2({placeholder: 'All universities'});
+                $('select[name^="filter[plateform]"]').select2({placeholder: 'All platforms'});
+            });
+        </script>
+    
+            <script type="text/javascript">
+
+            function getJsonUrl(page) {
+                var urlList = "/en/moocs/list/PLACEHOLDER";
+                var sort = '';
+
+                return urlList.replace('PLACEHOLDER', page) + '?' + $(".search-sidebar form").serialize() + '&sort=' + sort;
+            }
+
+            function loadAjaxContent() {
+
+                var loader = '<div id="loader"><div id="loading"></div></div>';
+                var formatNbResults = "%result% results out of  %total%";
+                var formatNbResult = "%result% result out of  %total%";
+
+                $('#search-results').html(loader);
+
+                $.ajax({
+                    url: getJsonUrl(1),
+                    success: function (data) {
+                        if (data.error) {
+                            showInfoModal('error', data.message);
+                        } else if (data.html) {
+                            $('.categtop').html(data.htmlCategTop);
+                            $('#search-results').html(data.html);
+                            $('img.lazy').lazyload();
+                            var text = (data.nbResults <= 1) ? formatNbResult : formatNbResults;
+                            $('.nb-results').html(text.replace('%result%', data.maxPerPage).replace('%total%', data.nbResults));
+                        }
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                loadAjaxContent();
+            });
+        </script>
+    
+
+</body>
+</html>

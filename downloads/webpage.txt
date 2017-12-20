@@ -1,0 +1,1182 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+                    
+    <meta name="apple-itunes-app" content="app-id=1195088081"/>
+    <meta name="google-play-app" content="app-id=fr.mymooc.mymooc">
+
+            <link href="/bundles/frontend/js/raty/jquery.raty.css" rel="stylesheet">
+                    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+            <link href="/bundles/frontend/css/popup.css" rel="stylesheet">
+            <link href="/bundles/frontend/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="/bundles/frontend/css/font-awesome.min.css" rel="stylesheet" >
+            <link href="/css/base.css" rel="stylesheet">
+            <link href="/css/responsive.css" rel="stylesheet">
+            <link href="/css/jquery-ui.min.css" rel="stylesheet">
+        
+    <link href="/bundles/frontend/css/jquery.smartbanner.css" rel="stylesheet">
+    <link href="/bundles/frontend/css/style.css" rel="stylesheet">
+    <link href="/bundles/frontend/css/responsive.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+    <link href="/css/zozo.tabs.min.css" rel="stylesheet">
+    <link href="/bundles/frontend/js/fullcalendar-3.0.1/fullcalendar.min.css" rel="stylesheet">
+    <link href="/bundles/frontend/js/fullcalendar-3.0.1/fullcalendar.print.css" rel="stylesheet" media="print">
+
+    <link href="/bundles/frontend/css/review.css" rel="stylesheet">
+    <link href="/css/owl.carousel.css" rel="stylesheet">
+
+                    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+            <script src="/bundles/frontend/js/jquery-1.11.3.min.js"></script>
+            <script src="/bundles/frontend/js/jquery-ui.min.js"></script>
+            <script type="text/javascript">
+                var modalLoader = [];
+            </script>
+
+                    <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-50810299-1', 'auto');
+                ga('send', 'pageview');
+
+            </script>
+        
+        
+                    <link rel="canonical" href="https://www.my-mooc.com/en/mooc/ap-physics-1-ricex-advphy1x/"/>
+
+            <link rel="alternate" href="https://www.my-mooc.com/en/mooc/ap-physics-1-ricex-advphy1x/" hreflang="en"/>
+<link rel="alternate" href="https://www.my-mooc.com/zh/mooc/ap-physics-1-ricex-advphy1x/" hreflang="zh"/>
+<link rel="alternate" href="https://www.my-mooc.com/fr/mooc/ap-physics-1-ricex-advphy1x/" hreflang="fr"/>
+
+            <meta name="keywords" />
+<meta name="description" content="Preparing for the AP Physics 1 exam requires a deep understanding of many different topics in physics as well as an understanding of the AP exam and." />
+<meta name="twitter:description" content="Preparing for the AP Physics 1 exam requires a deep understanding of many different topics in physics as well as an understanding of the AP exam and." />
+<meta name="twitter:card" content="summary" />
+<meta property="og:site_name" content="My Mooc" />
+<meta property="og:type" content="article" />
+<meta property="fb:admins" content="1545913899764" />
+<meta property="fb:add_id" content="1723805704500808" />
+<meta property="og:title" content="AP Physics 1" />
+<meta property="og:description" content="Preparing for the AP Physics 1 exam requires a deep understanding of many different topics in physics as well as an understanding of the AP exam and." />
+<meta property="og:url" content="https://www.my-mooc.com/en/mooc/ap-physics-1-ricex-advphy1x/" />
+<meta property="og:image" content="https://www.my-mooc.com/uploads/mooc/logo/71c2e8c7-db87-4462-afdb-010d9ce7bc0c.jpg" />
+<meta itemprop="image" content="https://www.my-mooc.com/uploads/mooc/logo/71c2e8c7-db87-4462-afdb-010d9ce7bc0c.jpg" />
+
+            <title>AP Physics 1 - My Mooc</title>
+        
+        <link rel="shortcut icon" href="/favicon.png" />        <link rel="apple-touch-icon" sizes="192x192" href="/icon.png">    </head>
+
+<body>
+
+
+         <nav class="navbar navbar-default navbar-transparent navbar-fixed-top hidden-xs" id="navbar-main">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navigation" aria-expanded="false">
+                <span class="sr-only">Show menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a title="My Mooc" class="navbar-brand" href="/en">
+                <img src="/bundles/frontend/img/logo-white.svg" alt="My Mooc" width="100" height="45" data-no-retina class="logo-white">
+                <img src="/bundles/frontend/img/logo-blue.svg" alt="My Mooc" width="100" height="45" data-no-retina class="logo-blue">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="main-navigation">
+                            <ul class="nav navbar-nav navbar-right switcher">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <div class="locale en"></div>
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+                            <li>
+                    <a href="/zh/mooc/ap-physics-1-ricex-advphy1x/" title="中文">
+                        <div class="locale zh"></div>
+                    </a>
+                </li>
+                            <li>
+                    <a href="/fr/mooc/ap-physics-1-ricex-advphy1x/" title="français">
+                        <div class="locale fr"></div>
+                    </a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                                        <ul class="nav navbar-nav navbar-right button-account">
+                    <li>
+                        <a data-target="#modalSearch" data-toggle="modal" href="#"><i class="fa fa-search"></i></a>
+                    </li>
+                                            <li>
+                            <a href="#" data-toggle="modal" data-target="#modalConnexion">
+                                <span class="submenu">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </a>
+                        </li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right">
+                    <li class="first">            <a href="/en/moocs" title="Courses">
+        Courses
+    </a>
+            
+    </li>
+
+        <li>            <a href="/en/conceptors" title="Providers">
+        Providers
+    </a>
+            
+    </li>
+
+        <li>            <a href="/en/leaderboard" title="Leaderboard">
+        Leaderboard
+    </a>
+            
+    </li>
+
+        <li class="last">            <a href="http://blog.my-mooc.fr/" title="Blog">
+        Blog
+    </a>
+            
+    </li>
+
+
+        </ul>
+    
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-mymooc navbar-mobile hidden-sm hidden-md hidden-lg"
+     id="navbar-mobile">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <div>
+                <button id="ChangeToggle" type="button" class="navbar-toggle close-style collapsed" data-toggle="collapse"
+                        data-target="#main-mobile" aria-expanded="false">
+                    <div id="sandwich-menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <a title="My Mooc" class="navbar-brand" href="/en">
+                    <img src="/bundles/frontend/img/logo-blue.svg" alt="My Mooc" width="100" height="45" data-no-retina>
+                </a>
+            </div>
+        </div>
+        <div class="navbar-collapse collapse" id="main-mobile">
+            <form action="/en/moocs" method="GET" id="mooc-form">
+                <div>
+                    <i class="fa fa-search"></i>
+                    <input type="text" name="filter[search]" placeholder="Search" class="form-control">
+                    <input type="hidden" name="filter[from]" value="searchBar">
+                </div>
+                <ul class="switcher">
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <div class="locale en"></div>
+        </a>
+        <ul class="dropdown-menu">
+                            <li>
+                    <a href="/zh/mooc/ap-physics-1-ricex-advphy1x/" title="中文">
+                        <div class="locale zh"></div>
+                    </a>
+                </li>
+                            <li>
+                    <a href="/fr/mooc/ap-physics-1-ricex-advphy1x/" title="français">
+                        <div class="locale fr"></div>
+                    </a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+            </form>
+
+            <ul class="mobile-ul">
+                                <li class="nav-img">
+                    <img src="/bundles/frontend/img/menu/cours.svg" alt="Book" class="item-image" />
+                    <a href="/en/moocs">
+                        Courses                    </a>
+                </li>
+                <li class="nav-img">
+                    <img src="/bundles/frontend/img/menu/etablissements.svg" alt="Book" class="item-image" />
+                    <a href="/en/conceptors">
+                        Providers                    </a>
+                </li>
+                <li class="nav-img">
+                    <img src="/bundles/frontend/img/menu/leaderboard.svg" alt="Book" class="item-image" />
+                    <a href="/en/leaderboard">
+                        Leaderboard                    </a>
+                </li>
+                <li class="nav-img">
+                    <img src="/bundles/frontend/img/menu/blog.svg" alt="Book" class="item-image" />
+                    <a href="/">
+                        Blog                    </a>
+                </li>
+                                    <li class="nav-img">
+                        <img src="/bundles/frontend/img/menu/deconnexion.svg" alt="Book" class="item-image" />
+                        <a href="#" data-toggle="modal" data-target="#modalConnexion" class="login">
+                            Login                        </a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</nav> 
+                        
+                        <section id="mooc-header">
+                                                                </section>
+                                                        
+                <section id="mooc-content" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-7 main-content">
+                <div class="white">
+
+                    
+                    <h1 itemprop="name">AP Physics 1</h1>
+                                        <div class="stats" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                        <meta itemprop="ratingValue" content="4">
+                        <meta itemprop="reviewCount" content="1">
+                        <div class="line clearfix">
+                            <div class="note">
+                                4/5                                <span aria-hidden="true" class="glyphicon glyphicon-signal"></span>
+                            </div>
+                            <div class="infos-note-container">
+                                <div class="small infos-note">
+                                    <div>
+                                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                        1 review                                    </div>
+                                                                    </div>
+                            </div>
+
+                            <div class="stars-container">
+                                <div class="stars  ">
+    
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+    
+    </div>                            </div>
+                        </div>
+
+                        <hr class="clearfix">
+                        <div class="line clearfix">
+                            <div class="row details-note">
+
+                                <div class="col-xs-12 col-sm-4 text-left">
+                                    Content : 4/5                                </div>
+                                <div class="col-xs-12 col-sm-4 text-center">
+                                    Platform : 4/5                                </div>
+                                <div class="col-xs-12 col-sm-4 text-right">
+                                    Animation : 4/5                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 text-center">
+                                <div class="button-container">
+                                    <a href="https://www.edx.org/course/ap-physics-1-ricex-advphy1x" target="_blank" class="global-btn-inverse">
+                                        Go to course                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row advices">
+                                                                                    
+                                                                                        
+                                                                                        
+                                                                                                                                                            
+                                                            <div class="col-xs-12 col-sm-6 col-md-6 text-center leave-comment">
+                                    <div class="button-container">
+                                        <a href="#" class="global-btn" data-toggle="modal" data-target="#modalReview">
+                                            Leave a review                                        </a>
+                                    </div>
+                                </div>
+                            
+                                                            <div class="col-xs-12 col-sm-6 col-md-6 text-center read-review">
+                                    <div class="button-container">
+                                        <a href="#mooc-reviews" class="global-btn goto">
+                                            Read reviews                                        </a>
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+
+                    <div class="duration">
+                        <div class="first full"></div>
+                        <div class="line-time">
+                            <div class="percent" style="width:63%"></div>
+                        </div>
+                        <div class="end"></div>
+                    </div>
+
+                    <div class="duration-text row">
+                        <div class="first col-xs-4">
+                                                            September 27, 2016
+                                                    </div>
+
+                        <div class="desc-duration col-xs-4">
+                                                            Session in progress                                                    </div>
+
+                        <div class="end col-xs-4">
+                                                            August 31, 2018
+                                                    </div>
+                    </div>
+
+                    <div class="mooc-infos">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 list">
+
+                                
+                                                                                                    <div class="item">
+                                        <div>
+                                            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                                        </div>
+                                        <div>
+                                            
+                                                                                            <div>
+                                                    18 sequences                                                </div>
+                                                                                    </div>
+                                    </div>
+                                
+                                <div class="item">
+                                    <div>
+                                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                                    </div>
+                                    <div>
+                                                                                    Free course                                                                            </div>
+                                </div>
+
+                                
+                            </div>
+                            <div class="col-xs-12 col-sm-7">
+                                <div class="row conceptors">
+                                    <div class="col-xs-6">
+                                                                                    <a href="/en/conceptor/ricex/">
+                                                            <img class="conceptor-image img-responsive" src="https://www.my-mooc.com/media/cache/conceptor_100x75/uploads/conceptor/logo/b5d1045ca1ae2956d6daa8241aaa95e5f2913e24.png" alt="Rice University" data-no-retina>
+                                            </a>
+                                                                            </div>
+
+                                    <div class="col-xs-6">
+                                                                                    <a href="/en/conceptor/edx/">
+                                                            <img class="conceptor-image img-responsive" src="https://www.my-mooc.com/media/cache/conceptor_100x75/uploads/conceptor/logo/b8f43acab0016e38189b6c58d4611b74ab106567.png" alt="Edx" data-no-retina>
+                                            </a>
+                                                                            </div>
+                                </div>
+
+                                <p class="share">Share this course on social networks!</p>
+
+                                <div class="line clearfix">
+                                    
+<a href="/en/moocs/share/linkedin/4735/"
+   onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+   class="social linkedin">
+    <img src="/bundles/frontend/img/social/linkedin-small.png"
+         alt="LinkedIn"
+         data-no-retina>
+</a>                                    
+<a href="/en/moocs/share/facebook/4735/"
+   onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+   class="social facebook">
+    <img src="/bundles/frontend/img/social/facebook-small.png"
+         alt="Facebook"
+         data-no-retina>
+</a>                                    
+<a href="/en/moocs/share/google+/4735/"
+   onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+   class="social google+">
+    <img src="/bundles/frontend/img/social/google+-small.png"
+         alt="Google Plus"
+         data-no-retina>
+</a>                                    
+<a href="/en/moocs/share/twitter/4735/"
+   onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"
+   class="social twitter">
+    <img src="/bundles/frontend/img/social/twitter-small.png"
+         alt="Twitter"
+         data-no-retina>
+</a>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-5 col-md-5 presentation">
+                <div class="white">
+                                            
+    
+<img class="lazy img-mooc" data-original="https://www.my-mooc.com/media/cache/mooc_458x275/uploads/mooc/logo/71c2e8c7-db87-4462-afdb-010d9ce7bc0c.jpg" alt="AP Physics 1" data-no-retina>                    
+                    <div class="introduction">
+                        <div class="resume" itemprop="description">
+                            <p>Preparing for the AP Physics 1 exam requires a deep understanding of many different topics in physics as well as an understanding of the AP exam and the types of questions it asks. This course is designed to teach you everything you need to know and help you prepare for the AP Physics 1 Exam.</p>
+
+<p>As you work through this course, you will find lecture videos taught by Rice professors, problem-solving sessions with expert AP Physics teachers, interactive lab experiences and practice questions. By the end of the course, you should be ready to take on the AP exam!</p>
+
+                        </div>
+                        <div id="see_more" class="see_more" data-inverse="See less">
+                            See more                        </div>
+                    </div>
+
+                    <div class="button-container clearfix">
+                        
+    <button data-src="/en/moocs/follow/4735/" class="global-btn" data-type="ajax-button">
+        Follow this course&nbsp;
+        <i class="fa fa-plus"></i>
+    </button>
+                        <a data-target="#modalSendMessage" data-toggle="modal" class="global-btn" href="#">
+                            Information request                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="mooc-details">
+    <div class="container">
+        <div class="content">
+            <div class="row nav-mooc-details">
+                <div class="col-xs-4 text-center">
+                    <a href="#" data-tab="#content-program" class="active">
+                        Program                    </a>
+                </div>
+                <div class="col-xs-4 text-center">
+                    <a href="#" data-tab="#content-professor">
+                        Teacher                    </a>
+                </div>
+                                    <div class="col-xs-4 text-center">
+                        <a href="#" data-tab="#content-platform">
+                            Platform                        </a>
+                    </div>
+                            </div>
+            <div class="container-content">
+                <div id="content-program">
+                    <ul>
+	<li>Newton’s Laws and motion</li>
+	<li>Conservation of energy and momentum</li>
+	<li>Gravitation</li>
+	<li>Electric charge in matter</li>
+	<li>Electric forces and fields</li>
+	<li>DC circuits</li>
+	<li>Waves and sound</li>
+</ul>
+
+                </div>
+                <div id="content-professor" class="tab-close">
+                    <ul><li>Jason Hafner<li>Gigi  Nevils<li>Matt Wilson</ul>
+                </div>
+                                    <div id="content-platform" class="tab-close row">
+                        <div class="col-sm-2 hidden-xs">
+                            <a href="/en/conceptor/edx/">
+                                            <img class="conceptor-image img-responsive" src="https://www.my-mooc.com/media/cache/conceptor_160x160/uploads/conceptor/logo/b8f43acab0016e38189b6c58d4611b74ab106567.png" alt="Edx" data-no-retina>
+                            </a>
+                        </div>
+                        <div class="col-sm-10 col-xs-12">
+                            <p>Harvard University, the Massachusetts Institute of Technology, and the University of California, Berkeley, are just some of the schools that you have at your fingertips with EdX. Through massive open online courses (MOOCs) from the world&#39;s best universities, you can develop your knowledge in literature, math, history, food and nutrition, and more. These online classes are taught by highly-regarded experts in the field. If you take a class on computer science through Harvard, you may be taught by David J. Malan, a senior lecturer on computer science at Harvard University for the School of Engineering and Applied Sciences. But there&#39;s not just one professor - you have access to the entire teaching staff, allowing you to receive feedback on assignments straight from the experts. Pursue a Verified Certificate to document your achievements and use your coursework for job and school applications, promotions, and more. EdX also works with top universities to conduct research, allowing them to learn more about learning. Using their findings, edX is able to provide students with the best and most effective courses, constantly enhancing the student experience.</p>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</section>        <section id="mooc-reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="title">Read reviews</div>
+                </div>
+                <div class="col-xs-6 text-right">
+                                <div class="filter">
+        Filter by :        <select id="order_by" class="form-control" onchange="window.location.replace($(this).val())">
+                            <option value="/en/mooc/ap-physics-1-ricex-advphy1x/?sort=date"
+                                >Date</option>
+                            <option value="/en/mooc/ap-physics-1-ricex-advphy1x/?sort=like"
+                                >Popularity</option>
+                            <option value="/en/mooc/ap-physics-1-ricex-advphy1x/?sort=note"
+                                >Rate</option>
+                    </select>
+    </div>
+                </div>
+            </div>
+            <div class="white">
+                                                                                                                    <div class="row review review-5655 ">
+    <div class="col-xs-12 col-sm-3">
+        <div class="row user-hover">
+
+                                                <script type="text/javascript">
+    $(document).ready(function () {
+
+                var userUrlImage = '/bundles/frontend/img/header-user.jpg';
+
+        var popoverTemplate = [
+            '<div class="popover hidden-xs">',
+            '<div class="arrow"></div>',
+            '<div class="popover-content">',
+            '</div>',
+            '</div>']
+                .join('');
+
+        var content = [
+            '<img src="https://www.my-mooc.com/media/cache/user_160x160/bundles/frontend/img/avatar.png" class="user-image" alt="joseph bashir" data-no-retina>',
+            '<div class="data-wrapper-top" style="background-image:url('+userUrlImage+');">',
+            '<div class="data">',
+            '<span class="name">joseph\x20bashir</span>',
+            '<span class="bio"></span>',
+            '</div>',
+            '</div>',
+            '<div class="data-wrapper-bottom">',
+            '<div class="data">',
+            '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> <b>4</b> Moocs',
+            '<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <b>1</b> Reviews',
+            '<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <b>0</b> Likes',
+            '</div>',
+            '</div>'
+        ].join('');
+
+        $('.review-5655').popover({
+            container: 'body',
+            selector: '.user-hover',
+            trigger: 'hover',
+            content: content,
+            template: popoverTemplate,
+            placement: "top",
+            html: true
+        });
+
+        $('[data-toggle="popover"]').popover();
+
+    })
+</script>                            
+            <div class="col-xs-offset-1 col-xs-3 col-sm-offset-0 col-sm-3 col-lg-offset-1 col-lg-3 img-user">
+                <img src="https://www.my-mooc.com/media/cache/user_40x40/bundles/frontend/img/avatar.png" class="user-image" alt="joseph bashir" data-no-retina>            </div>
+            <div class="col-xs-offset-1 col-xs-7 col-sm-offset-1 col-sm-8 col-lg-offset-1 col-lg-7 user-infos">
+                <div class="name">
+                                                                        <a href="/en/profile/id/38251">
+                                                joseph bashir
+                                                    </a>
+                                                            </div>
+                <div class="nb-review">
+                                        1 review left                </div>
+                <div class="date">19/10/2017</div>
+            </div>
+        </div>
+                                    <div class="row badges">
+                                    </div>
+                        </div>
+    <div class="col-xs-12 col-sm-9">
+        <div class="line-top clearfix">
+            <div class="stars pull-left">
+                <div class="stars  ">
+    
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star-o" aria-hidden="true"></i>
+    
+            <span class="note">4 / 5</span>
+    </div>            </div>
+            <div class="progress-mooc pull-right">
+                                    <span class="hidden-xs">Given up</span>
+                    <img src="/bundles/frontend/img/mooc/progress-1.png"
+                         alt="Given up">
+                            </div>
+        </div>
+        <div class="comment">
+            high quality education
+        </div>
+        <div class="response">
+                                </div>
+        <div class="links pull-left">
+            <a href="/en/moocs/review/report/5655/" rel="noindex, nofollow">Report this review</a>
+        </div>
+        <div class="links pull-right">
+                        
+0&nbsp;<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <hr>
+    </div>
+</div>                                                                </div>
+        </div>
+    </section>
+    
+
+        
+                <footer>
+        
+            <section id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 about">
+                <img src="/bundles/frontend/img/logo-white.svg" alt="My Mooc" width="100" height="45" data-no-retina class="logo-white">
+                <div class="sep"></div>
+                <div class="description">
+                    Are you looking to train yourself online? Let us guide you by My Mooc, the first search engine for online courses including a wide community dimension.                    <div class="moocsearch">
+                        <form action="/en/moocs" method="GET">
+                            <input type="search" id="moocsearch" name="filter[search]" required="required" placeholder="Mathematics..." />
+                            <input type="hidden" name="filter[from]" value="footerSearch">
+                            <input type="submit" id="moocsubmit" name="" value="OK" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="title">Sitemap</div>
+                            <ul class="sitemap">
+                    <li class="first">            <a href="/en/about" title="About">
+        About
+    </a>
+            
+    </li>
+
+        <li>            <a href="http://blog.my-mooc.com" title="Blog">
+        Blog
+    </a>
+            
+    </li>
+
+        <li>            <a href="/en/moocs" title="Courses">
+        Courses
+    </a>
+            
+    </li>
+
+        <li>            <a href="/en/conceptors" title="Providers">
+        Providers
+    </a>
+            
+    </li>
+
+        <li>            <a href="/en/leaderboard" title="Leaderboard">
+        Leaderboard
+    </a>
+            
+    </li>
+
+        <li class="last">            <a href="http://business.my-mooc.com" title="My Mooc for companies">
+        My Mooc for companies
+    </a>
+            
+    </li>
+
+
+        </ul>
+    
+            </div>
+            <div class="col-xs-12 col-sm-3" id="rss">
+                <div class="title">Latest news</div>
+                <div class="rss-content"></div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3 networks">
+                <div class="title">Social networks</div>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/Mymooc/"
+                           title="My Mooc on Facebook">
+                            <div class="network facebook" ></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://twitter.com/My_Mooc"
+                           title="My Mooc on Twitter">
+                            <div class="network twitter"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href=" https://www.linkedin.com/company/9247198?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A9247198%2Cidx%3A2-1-2%2CtarId%3A1455563458664%2Ctas%3Amy"
+                           title="My Mooc on Linkedin">
+                            <div class="network linkedin"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href=" https://plus.google.com/u/0/+MymoocFr-lapprentissageenligne/posts"
+                           title="My Mooc on Google+">
+                            <div class="network google"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/my_mooc/"
+                           title="My Mooc on Instagram">
+                            <div class="network instagram"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI2OTM5NjI0Ng==&scene=124#wechat_redirect"
+                           title="My Mooc on WeChat">
+                            <div class="network wechat"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=http%3A%2F%2Fweibo.com%2Fp%2F1006065982892049%2Fhome%3Ffrom%3Dpage_100606%26mod%3DTAB%26is_all%3D1&domain=.weibo.com&ua=php-sso_sdk_client-0.6.23&_rand=1487326776.6904#place"
+                           title="My Mooc on Social">
+                            <div class="network social"></div>
+                        </a>
+                    </li>
+                </ul>
+                <button class="contact" data-toggle="modal" data-target="#modalContactUs">
+                    contact us                </button>
+                <div class="sep"></div>
+                <div class="title">Newsletter&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="moocnews">
+    <form action="/en/moocs/newletter/" class="form-inline form-newsletter-home">
+        
+        
+        <input type="email" id="notification_email" name="notification[email]" required="required" placeholder="Your mail" class="form-control" />
+        <button type="submit"         id="notification_save" name="notification[save]" required="required" class="btn form-control hidden-xs"
+>
+        OK</button>
+        
+    </form>
+</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <span>Copyright © 2017 My Mooc. All rights reserved.</span>
+                    <span class="pipe hidden-xs"></span>
+                    <a href="https://www.my-mooc.com/en/legal_notice">
+                        <span>Legal notice</span>
+                    </a>
+                    <span class="pipe hidden-xs"></span>
+                    <a href="https://www.my-mooc.com/en/confidentiality">
+                        <span>Privacy policy</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                </footer>
+                
+        <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="Guide">
+    <div class="container" role="document">
+        <div class="row">
+            <div class="col-xs-hidden col-sm-hidden col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8">
+                <form action="/en/moocs" method="GET">
+                    <div class="form-group clearfix">
+                        <input type="text" name="filter[search]" placeholder="Mathematics..." class="form-control typeahead">
+                        <input type="hidden" name="filter[from]" value="searchBar">
+                        <input type="submit" value="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>        <div class="modal fade modal-info" tabindex="-1" role="dialog" id="modalInfo">
+    <div class="modal-dialog">
+        <div class="alert alert-TYPE_PLACEHOLDER alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            <div class="inner row">
+                <div class="content col-xs-12 text-center">MESSAGE_PLACEHOLDER</div>
+                <div class="extra col-xs-12">
+                    <div class="row">
+                        
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="global-btn-inverse center-block" type="button">
+                        Close window                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <script src="/bundles/frontend/js/raty/jquery.raty.js"></script>
+<script type="text/javascript">
+
+    var hints = [
+        'Mauvais',
+        'Moyen',
+        'Bon',
+        'Très bon',
+        'Excellent'
+    ];
+
+    var initRaty = function (item) {
+
+        if (item == undefined) {
+            item = { container: '#modalReview'};
+        }
+
+        item.container = $(item.container);
+
+        var contenuValue = item.container.find('.val-contenu').text();
+        var plateformValue = item.container.find('.val-plateforme').text();
+        var animationValue = item.container.find('.val-animation').text();
+
+        $('.raty-contenu').raty({
+            scoreName: 'review[contentNote]',
+            number: 5,
+            half: true,
+            score: contenuValue,
+            path: "/bundles/frontend/js/raty/images",
+            halfShow : true,
+            hints: hints
+        });
+
+        $('.raty-plateforme').raty({
+            scoreName: 'review[plateformNote]',
+            number: 5,
+            half: true,
+            score: plateformValue,
+            path: "/bundles/frontend/js/raty/images",
+            hints: hints
+        });
+
+        $('.raty-animation').raty({
+            scoreName: 'review[animationNote]',
+            number: 5,
+            half: true,
+            score: animationValue,
+            path: "/bundles/frontend/js/raty/images",
+            hints: hints
+        });
+
+        $('.raty-contenu img').on('click', function () {
+            $('.val-contenu').text($(this).parent().parent().find('input').val());
+        });
+
+        $('.raty-plateforme img').on('click', function () {
+            $('.val-plateforme').text($(this).parent().parent().find('input').val());
+        });
+
+        $('.raty-animation img').on('click', function () {
+            $('.val-animation').text($(this).parent().parent().find('input').val());
+        });
+
+        $(".reason-review").slideUp();
+
+        /* Système d'avancement */
+        $('[name="review[status]"]').on("change", function () {
+
+            $('td[class^="progress-line-"]').each(function () {
+                $(this).removeClass('active').find('input').removeClass('active');
+            });
+
+            switch ($(this).val()) {
+                case '0':
+                    $('td[class^="progress-line-"] span').removeClass('active');
+                    $('.reason-review').slideDown();
+                    break;
+                case '1':
+                    $('td[class^="progress-line-"] span').removeClass('active');
+                    $(".progress-line-1 span.part-2").addClass('active').parent().find('input').addClass('active');
+                    $(".progress-line-2 span.part-1").addClass('active');
+                    if( $('.reason-review').css('display') == 'block') {
+                        $('.reason-review').slideUp();
+                    }
+                    break;
+                case '2':
+                    $('td[class^="progress-line-"] span').addClass('active').parent().find('input').addClass('active');
+                    if( $('.reason-review').css('display') == 'block') {
+                        $('.reason-review').slideUp();
+                    }
+            }
+        });
+
+        $('[name="review[status]"]:checked').trigger('change');
+    };
+</script>
+    <script type="text/javascript">
+
+                modalLoader.push({
+            url: 'https://www.my-mooc.com/en/moocs/review/new/4735/?init=1',
+            container: '#modalReview',
+            callback: initRaty,
+            useOnSubmit: true
+        });
+        
+        modalLoader.push({
+            url: 'https://www.my-mooc.com/en/contact/new/type/mooc/id/4735/',
+            container: '#modalSendMessage',
+            useOnSubmit: true
+        });
+
+    </script>
+            <script src="/bundles/frontend/js/jquery.appear.js"></script>
+    <script src="/bundles/frontend/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/bundles/frontend/js/retina.js"></script>
+    <script src="/bundles/frontend/js/typeahead.bundle.js"></script>
+    <script src="/bundles/frontend/js/jquery.lazyload.min.js"></script>
+    <script src="/bundles/frontend/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="/bundles/frontend/js/ajax.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            /* Correction of bootstrap bug with modal and navbar (fixed-top) */
+            (function ($) {
+                var _originalSetScrollbar = $.fn.modal.Constructor.prototype.setScrollbar;
+                var _originalResetScrollbar = $.fn.modal.Constructor.prototype.resetScrollbar;
+
+                $.extend($.fn.modal.Constructor.prototype, {
+                    setScrollbar: function () {
+                        var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10);
+                        this.$body.find('.navbar-fixed-top').css({'padding-right': bodyPad + this.scrollbarWidth});
+                        return _originalSetScrollbar.call(this);
+                    },
+                    resetScrollbar: function () {
+                        this.$body.find('.navbar-fixed-top').css({'padding-right': 0});
+                        return _originalResetScrollbar.call(this);
+                    }
+                });
+            })(jQuery);
+
+            $(".navbar-toggle").click(function() {
+                if ($("#main-mobile").hasClass('in')) {
+                    return $("body").removeClass("no-scroll");
+                } else {
+                    return $("body").addClass("no-scroll");
+                }
+            });
+
+            $(".tab-close").hide();
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-type="ajax-button"]').on('click', ajaxButton);
+        });
+    </script>
+            
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            modalLoader.push({
+                url: 'https://www.my-mooc.com/en/contact/new/type/global/id/0/',
+                container: '#modalContactUs',
+                useOnSubmit: true
+            });
+
+            
+                    modalLoader.push({
+                        url: 'https://www.my-mooc.com/en/login?original=1',
+                        container: '#modalConnexion',
+                        useOnSubmit: true
+                    });
+
+                    modalLoader.push({
+                        url: 'https://www.my-mooc.com/en/register/',
+                        container: '#modalInscription',
+                        useOnSubmit: true
+                    });
+
+                    modalLoader.push({
+                        url: 'https://www.my-mooc.com/en/resetting/request',
+                        container: '#modalPassword',
+                        useOnSubmit: true
+                    });
+
+            
+            $.ajax({
+                url: '/en/rss/feed',
+                success: function (data) {
+                    $('#rss .rss-content').html(data);
+                    var owl = $('#slider-footer');
+                    owl.owlCarousel({
+                        margin: 0,
+                        loop: true,
+                        items: 1,
+                        nav: true,
+                        navText: [
+                            "<div class='arrow-prev hide'>",
+                            "<div class='arrow-next'>"
+                        ],
+                        slideBy: 1,
+                        dots: false,
+                        autoplay: true,
+                        autoplayTimeout: 4000,
+                        autoplayHoverPause: true
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            checkOpenModal();
+
+            // Lazy Loading
+            var lazy = $('img.lazy').lazyload();
+
+            loadModals();
+        });
+
+        // Typehead
+        var moocs = new Bloodhound({
+            datumTokenizer: Bloodhound.tokenizers.obj.whitespace('title'),
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            prefetch: "https://www.my-mooc.com/en/moocs/typeahead.json/"
+        });
+
+        $(".typeahead").typeahead(null, {
+            name: 'moocs',
+            source: moocs,
+            displayKey: 'title'
+        }).bind('typeahead:selected', function(obj, selected) {
+            window.location.href = selected.href;
+        });
+
+        $('img[src$=".svg"]:not(.no-svg)').each(function() {
+            convertImgToSvg($(this));
+        });
+
+        function convertImgToSvg($img) {
+            var imgID = $img.attr('id');
+            var imgClass = $img.attr('class');
+            var imgURL = $img.attr('src');
+
+            $.get(imgURL, function(data) {
+                var $svg = $(data).find('svg');
+
+                if(typeof imgID !== 'undefined') {
+                    $svg = $svg.attr('id', imgID);
+                }
+
+                if(typeof imgClass !== 'undefined') {
+                    $svg = $svg.attr('class', imgClass+' replaced-svg');
+                }
+
+                $svg = $svg.removeAttr('xmlns:a');
+
+                if(!$svg.attr('viewBox') && $svg.attr('height') && $svg.attr('width')) {
+                    $svg.attr('viewBox', '0 0 ' + $svg.attr('height') + ' ' + $svg.attr('width'))
+                }
+
+                $img.replaceWith($svg);
+
+            }, 'xml');
+        }
+
+
+    </script>
+
+
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/bundles/frontend/js/list.js"></script>
+    <script src="/js/zozo.tabs.min.js"></script>
+    <script src="/bundles/frontend/js/fullcalendar-3.0.1/lib/moment.min.js"></script>
+    <script src="/bundles/frontend/js/fullcalendar-3.0.1/fullcalendar.js"></script>
+    <script src="/bundles/frontend/js/fullcalendar-3.0.1/locale-all.js"></script>
+
+    <script src="/bundles/frontend/js/jquery.smartbanner.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $.smartbanner({
+                appStoreLanguage: 'en',
+                title: 'My Mooc Advisor',
+                price: 'Free',
+                inGooglePlay: 'In Google Play',
+                button: 'View',
+                layer: true
+            });
+        });
+
+        $(document).ready(function () {
+
+            var navbarclasses = ['navbar-transparent', 'navbar-white'];
+            var navbar = $('#navbar-main');
+            $(window).scroll(function () {
+                var value = ($(document).scrollTop() < 10);
+                if (navbar.hasClass(navbarclasses[+value])) {
+                    navbar.fadeOut(100, function () {
+                        $(this).removeClass(navbarclasses[+value]).addClass(navbarclasses[+!value]).fadeIn(100);
+                    });
+                }
+            });
+        });
+    </script>
+
+        
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".nav-mooc-details a").on('click', function() {
+            if (!$(this).hasClass('active')) {
+                var parent = $(this);
+
+                $('.container-content [id^="content-"]:visible').fadeOut('slow', function() {
+                    var content = parent.data('tab');
+                    $(".nav-mooc-details a").each(function() {
+                        $(this).removeClass('active');
+                    });
+                    parent.addClass('active');
+                    $(content).fadeIn('slow');
+                });
+            }
+            return false;
+        });
+
+        var seeMoreMaxHeight = $('.resume').css('max-height');
+        var seeMore = $('#see_more').text();
+        $('#see_more').on('click', function() {
+            if ($('.resume').css('max-height') != 'none') {
+                $('.resume').css('max-height', 'none');
+                $('#see_more').text($('#see_more').data('inverse'));
+            } else {
+                $('#see_more').text(seeMore);
+                $('.resume').css('max-height', seeMoreMaxHeight);
+            }
+        });
+
+        $('#mooc-reviews .review-response').on('click', function (event) {
+            event.preventDefault();
+            $(event.target).closest('.review').find('.response-box').show();
+        });
+
+        $('#mooc-reviews .response-box #body').on('keypress', function (event) {
+            if (event.which == 13) {
+                var input =  $(event.target);
+                var container = input.closest('.review');
+                $.ajax({
+                    url: container.find('.review-response').attr('href'),
+                    data: { body: input.val() },
+                    success: function(data) {
+                        if (data.type == 'html') {
+                            var box = container.find('.response-box');
+                            $(data.html).insertAfter(box);
+                            box.hide();
+                            return true;
+                        }
+                        onAjaxSuccess(data);
+                    }
+                });
+            }
+        });
+
+    });
+</script>
+    <script src="/js/owl.carousel.min.js"></script>
+
+    
+
+</body>
+</html>
