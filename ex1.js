@@ -1,22 +1,22 @@
-var express = require('express');
-var path = require('path');
+// var express = require('express');
+// var path = require('path');
 var request = require('request');
-var cheerio = require('cheerio');
+// var cheerio = require('cheerio');
 var fs = require('fs');
-var app = express();
-var port = 8000;
+// var app = express();
+// var port = 8000;
 
 var page = "https://www.my-mooc.com/en/mooc/ap-physics-1-ricex-advphy1x/"
 
-request(page, function (error, response, html) {
-    if (!error && response.statusCode == 200) {
-      var $ = cheerio.load(html);
-      $('div[class=preview-mooc]').each(function(i, element){
-        var div = $(this);
-        console.log(div.html());
-      });
-    }
-  });
+// request(page, function (error, response, html) {
+//     if (!error && response.statusCode == 200) {
+//       var $ = cheerio.load(html);
+//       $('div[class=preview-mooc]').each(function(i, element){
+//         var div = $(this);
+//         console.log(div.html());
+//       });
+//     }
+//   });
   
 // request(khanHome, function(error, response, htmlBody){
 //     var $ = cheerio.load(htmlBody);
